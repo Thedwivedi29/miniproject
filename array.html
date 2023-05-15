@@ -1,0 +1,243 @@
+<html><head>
+	<title>codify</title>
+	<style>
+		/* Style for the header */
+		header {
+			background-color: #f6f3f3;
+			color: rgb(8, 2, 2);
+			padding: 5px;
+			text-align: center;
+			position: relative;
+		}
+		h1 {
+			font-size: 48px;
+			margin: 0;
+		}
+		.logo {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+            padding: 1 px;
+		}
+		/* Style for the navigation bar */
+		nav {
+			background-color: #0b0000;
+			padding: 10px;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			
+		}
+		nav li {
+			margin: 0 5px;
+			padding: 3px;
+			position: relative;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 15px;
+		}
+		/* Dropdown styles */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #979595;
+			z-index: 1;
+			padding: 10px;
+		}
+		.dropdown-content a {
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		/* Style for the main content */
+		main {
+			display: flex;
+			flex-direction: row;
+			padding: 20px;
+			max-width: 2000px;
+			margin: 0 auto;
+		}
+		.left-content {
+			flex-basis: 20%;
+			background-color: #ddd;
+			padding: 20px;
+		}
+		.left-content h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+		.left-content ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.left-content li {
+			margin: 10px 10px;
+			padding: 0px 0px;
+		}
+		.left-content a {
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		.right-content {
+			flex-basis: 75%;
+			background-color: #fff;
+			padding: 20px;
+		}
+		h2 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0;
+			max-width: 800px;
+		}
+		button {
+			background-color: #131212;
+			color: white;
+			font-size: 20px;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 5px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.search-container {
+			display: flex;
+			align-items: left;
+			background-color: #f7f6f6;
+			padding: 5px 80px;
+		}
+		.search-container input[type="text"] {
+  			width: 800px;
+  			padding: 10px 10px;
+			margin: 8px 87px;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: white;
+			font-size: 16px;
+		}
+
+		.search-container button {
+			background-color: #333;
+			color: white;
+			font-size: 24px;
+		}
+		.my-button {
+			background-color: grey;
+			color: white;
+			font-size: 16px;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+	<a href = "python page.html" > <img src="logo.jpg" alt="Logo" class="logo" width="135" height="50"></a>
+	<div class="search-container">
+		<form action="/search">
+			<label for="search-input"> </label>
+			<input type="text" id="search-input" name="q" placeholder="Search...">
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</header>
+	
+<nav>
+	<ul>
+		<li><a href="array.html"><button>Arrays</button></a></li>
+		<li><a href="strings.html"><button>Strings</button></a></li>
+		<li><a href="functions.html"><button>Functions</button></a></li>
+		<li><a href="filehandling.html"><button>File Handling</button></a></li>
+		<li><a href="datastructure.html"><button>Data Structures</button></a></li>
+		<li><a href="programs.html"><button>Python Programs</button></a></li>
+		<li><a href="operators.html"><button>Operators in Python</button></a></li>
+	</ul>
+</nav>
+
+<main>
+	<div class="left-content">
+		<h2>Categories</h2>
+		<ul>
+			<li><a href="introduction.html">Introduction</a></li>
+            <li><a href="Datatypes.html">Data Types</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="array.html">Array</a></li>
+			<li><a href="strings.html">Strings</a></li>
+			<li><a href="userinput.html">User Input in Python</a></li>
+			<li><a href="tuples.html">Tuples</a></li>
+			<li><a href="sets.html">Sets</a></li>
+			<li><a href="dictionaries.html">Dictionaries</a></li>
+			<li><a href="ifelse.html">If-Else Statements in Python</a></li>
+			<li><a href="for.html">For Loops in Python</a></li>
+			<li><a href="while.html">While Loops in Python</a></li>
+		</ul>
+	</div>
+	<div class="right-content">
+		<h2>Arrays and Array Functions in Python</h2>
+  <p>An array is a collection of elements of the same data type. Python has a built-in array module that allows you to create arrays.</p>
+  <p>Here are some common array functions in Python:</p>
+  <ul>
+    <li><code>array.array(typecode[, initializer])</code> - Creates an array with the specified typecode and optional initializer.</li>
+    <li><code>array.append(x)</code> - Adds an element to the end of the array.</li>
+    <li><code>array.extend(iterable)</code> - Adds the elements of an iterable to the end of the array.</li>
+    <li><code>array.insert(i, x)</code> - Inserts an element at the specified index.</li>
+    <li><code>array.pop([i])</code> - Removes and returns the element at the specified index, or the last element if no index is specified.</li>
+    <li><code>array.remove(x)</code> - Removes the first occurrence of the specified element.</li>
+    <li><code>array.reverse()</code> - Reverses the order of the elements in the array.</li>
+    <li><code>array.sort(key=None, reverse=False)</code> - Sorts the elements in the array in ascending order by default, or in descending order if reverse is True.</li>
+  </ul>
+
+  <h3>Examples</h3>
+  
+  <p>Creating an array:</p>
+  <pre><code>import array
+a = array.array('i', [1, 2, 3, 4, 5])</code></pre>
+  
+  <p>Adding an element to the end of the array:</p>
+  <pre><code>a.append(6)</code></pre>
+  
+  <p>Adding the elements of another array to the end of the array:</p>
+  <pre><code>b = array.array('i', [7, 8, 9])
+a.extend(b)</code></pre>
+  
+  <p>Inserting an element at a specific index:</p>
+  <pre><code>a.insert(0, 0)</code></pre>
+  
+  <p>Removing the last element of the array:</p>
+  <pre><code>a.pop()</code></pre>
+  
+  <p>Removing the first occurrence of an element:</p>
+  <pre><code>a.remove(3)</code></pre>
+  
+  <p>Reversing the order of the elements:</p>
+  <pre><code>a.reverse()</code></pre>
+  
+  <p>Sorting the elements in ascending order:</p>
+  <pre><code>a.sort()</code></pre>
+  
+  <p>Sorting the elements in descending order:</p>
+  <pre><code>a.sort(reverse=True)</code></pre>
+	</div>
+</main>
+</body></html>

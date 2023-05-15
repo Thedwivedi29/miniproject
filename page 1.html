@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Tutorial</title>
+	<!-- meta tags, stylesheets, and scripts go here -->
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #ccc;
+			height: 100%;
+			width: 150px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+
+		nav a {
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+			color: #000;
+			font-weight: bold;
+			border-bottom: 1px solid #666;
+		}
+
+		nav a:hover {
+			background-color: #666;
+			color: #fff;
+		}
+
+		main {
+			margin-left: 150px;
+			padding: 20px;
+		}
+
+		section {
+			margin-bottom: 30px;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 20px;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		code {
+			background-color: #f4f4f4;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Python Tutorial</h1>
+	</header>
+
+	<nav>
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#get-started">Getting Started</a></li>
+            <li><a href="#data-types">Data Types</a></li>
+            <li><a href="#lists">Lists</a></li>
+        
+			<!-- add more links for different sections -->
+	</nav>
+
+	<main>
+		<button id="toggle-btn">Next</button>
+		<div id="content-1" class="content">
+			<section id="get-started">
+				<h2>Getting Started</h2>
+				<p>To get started with Python, you need to download and install the Python interpreter on your computer. You can download the latest version of Python from the official website:</p>
+				<code>https://www.python.org/downloads/</code>
+				<p>Once you have installed Python, you can open a Python shell or run a Python script from the command line.</p>
+			</section>
+		</div>
+		<div id="content-2" class="content">
+			<section id="intro">
+				<h2>Introduction</h2>
+				<p>Python is a high-level programming language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and more. It is known for its simplicity, readability, and versatility.</p>
+				<p>In this tutorial, we will cover the basics of Python programming and gradually move on to more advanced topics.</p>
+			</section>
+		</div>
+		
+		<script>
+		const toggleBtn = document.getElementById("toggle-btn");
+		const content1 = document.getElementById("content-1");
+		const content2 = document.getElementById("content-2");
+		
+		let showingContent1 = true;
+		
+		toggleBtn.addEventListener("click", () => {
+			if (showingContent1) {
+			content1.style.display = "none";
+			content2.style.display = "block";
+			} else {
+			content1.style.display = "block";
+			content2.style.display = "none";
+			}
+			showingContent1 = !showingContent1;
+		});
+		</script>
+
+		<section id="intro">
+			<h2>Introduction</h2>
+			<p>Python is a high-level programming language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and more. It is known for its simplicity, readability, and versatility.</p>
+			<p>In this tutorial, we will cover the basics of Python programming and gradually move on to more advanced topics.</p>
+		</section>
+
+		<section id="get-started">
+			<h2>Getting Started</h2>
+			<p>To get started with Python, you need to download and install the Python interpreter on your computer. You can download the latest version of Python from the official website:</p>
+			<code>https://www.python.org/downloads/</code>
+			<p>Once you have installed Python, you can open a Python shell or run a Python script from the command line.</p>
+		</section>
+    
+        <section id="data-types">
+            <h2>Data Types</h2>
+            <p>Python has several built-in data types:</p>
+            <ul>
+                <li><strong>Numbers:</strong> used for numeric values, including integers, floats, and complex numbers.</li>
+                <li><strong>Strings:</strong> used for text data.</li>
+                <li><strong>Lists:</strong> used for collections of values, which can be of different data types.</li>
+                <li><strong>Tuples:</strong> similar to lists, but are immutable (cannot be changed).</li>
+                <li><strong>Sets:</strong> used for collections of unique values.</li>
+                <li><strong>Dictionaries:</strong> used for storing key-value pairs.</li>
+                <li><strong>Booleans:</strong> used for logical values (True or False).</li>
+                <li><strong>None:</strong> used to represent null or no value.</li>
+            </ul>
+            <p>Each data type has its own set of operations and methods that can be used to manipulate the data.</p>
+        </section>
+        <section id="lists">
+            <h2>Lists</h2>
+            <p>A list is a collection of values that are ordered and changeable. Lists are written with square brackets.</p>
+            <pre><code>my_list = [1, 2, 3, "four", 5.0]</code></pre>
+            <p>You can access individual elements of a list using their index:</p>
+            <pre><code>print(my_list[0])</code></pre>
+            <pre><code># Output: 1 print(my_list[3])</code></pre>
+            <pre><code># Output: four</code></pre>
+            <p>You can also use negative indexing to access elements from the end of the list:</p>
+            <pre><code>print(my_list[-1])</code></pre>
+            <pre><code># Output: 5.0 print(my_list[-3])</code></pre>
+            <pre><code># Output: four</code></pre>
+            <p>You can add elements to the end of a list using the <code>append()</code> method:</p>
+            <pre><code>my_list.append("six") print(my_list)</code></pre>
+            <pre><code># Output: [1, 2, 3, "four", 5.0, "six"]</code></pre>
+            <p>You can insert elements at a specific position in the list using the <code>insert()</code> method:</p>
+            <pre><code>my_list.insert(2, "three") print(my_list)</code></pre>
+            <pre><code># Output: [1, 2, "three", 3, "four", 5.0, "six"]</code></pre>
+            <p>You can remove elements from a list using the <code>remove()</code> method:</p>
+            <pre><code>my_list.remove("four") print(my_list)   # Output: [1, 2, "three", 3, 5.0, "six"]</code></pre>
+            <p>You can also use the <code>pop()</code> method to remove an element from a specific position and return its value:</p>
+            <pre><code>value = my_list.pop(2) print(value) </code></pre>
+            <pre><code># Output: "three" print(my_list) </code></pre>
+            <pre><code># Output: [1, 2, 3, 5.0, "six"]</code></pre>
+        </section>
+        
+        
+    
+    </main>
+</body>
+</html>

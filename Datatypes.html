@@ -1,0 +1,264 @@
+<html><head>
+	<title>codify</title>
+	<style>
+		/* Style for the header */
+		header {
+			background-color: #f6f3f3;
+			color: rgb(8, 2, 2);
+			padding: 5px;
+			text-align: center;
+			position: relative;
+		}
+		h1 {
+			font-size: 48px;
+			margin: 0;
+		}
+		.logo {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+            padding: 1 px;
+		}
+		/* Style for the navigation bar */
+		nav {
+			background-color: #0b0000;
+			padding: 10px;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			
+		}
+		nav li {
+			margin: 0 5px;
+			padding: 3px;
+			position: relative;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 15px;
+		}
+		/* Dropdown styles */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #979595;
+			z-index: 1;
+			padding: 10px;
+		}
+		.dropdown-content a {
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		/* Style for the main content */
+		main {
+			display: flex;
+			flex-direction: row;
+			padding: 20px;
+			max-width: 2000px;
+			margin: 0 auto;
+		}
+		.left-content {
+			flex-basis: 20%;
+			background-color: #ddd;
+			padding: 20px;
+		}
+		.left-content h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+		.left-content ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.left-content li {
+			margin: 10px 10px;
+			padding: 0px 0px;
+		}
+		.left-content a {
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		.right-content {
+			flex-basis: 75%;
+			background-color: #fff;
+			padding: 20px;
+		}
+		h2 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0;
+			max-width: 800px;
+		}
+		button {
+			background-color: #131212;
+			color: white;
+			font-size: 20px;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 5px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.search-container {
+			display: flex;
+			align-items: left;
+			background-color: #f7f6f6;
+			padding: 5px 80px;
+		}
+		.search-container input[type="text"] {
+  			width: 800px;
+  			padding: 10px 10px;
+			margin: 8px 87px;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: white;
+			font-size: 16px;
+		}
+
+		.search-container button {
+			background-color: #333;
+			color: white;
+			font-size: 24px;
+		}
+		.my-button {
+			background-color: grey;
+			color: white;
+			font-size: 16px;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+	<a href = "python page.html" > <img src="logo.jpg" alt="Logo" class="logo" width="135" height="50"></a>
+	<div class="search-container">
+		<form action="/search">
+			<label for="search-input"> </label>
+			<input type="text" id="search-input" name="q" placeholder="Search...">
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</header>
+	
+<nav>
+	<ul>
+		<li><a href="array.html"><button>Arrays</button></a></li>
+		<li><a href="strings.html"><button>Strings</button></a></li>
+		<li><a href="functions.html"><button>Functions</button></a></li>
+		<li><a href="filehandling.html"><button>File Handling</button></a></li>
+		<li><a href="datastructure.html"><button>Data Structures</button></a></li>
+		<li><a href="programs.html"><button>Python Programs</button></a></li>
+		<li><a href="operators.html"><button>Operators in Python</button></a></li>
+	</ul>
+</nav>
+
+<main>
+	<div class="left-content">
+		<h2>Categories</h2>
+		<ul>
+			<li><a href="introduction.html">Introduction</a></li>
+            <li><a href="Datatypes.html">Data Types</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="array.html">Array</a></li>
+			<li><a href="strings.html">Strings</a></li>
+			<li><a href="userinput.html">User Input in Python</a></li>
+			<li><a href="tuples.html">Tuples</a></li>
+			<li><a href="sets.html">Sets</a></li>
+			<li><a href="dictionaries.html">Dictionaries</a></li>
+			<li><a href="ifelse.html">If-Else Statements in Python</a></li>
+			<li><a href="for.html">For Loops in Python</a></li>
+			<li><a href="while.html">While Loops in Python</a></li>
+		</ul>
+	</div>
+	<div class="right-content">
+		<h1>Data Types in Python</h1>
+			<p>Python has several built-in data types, which can be classified as follows:</p>
+			<ul>
+				<li>Numeric</li>
+				<li>Sequence</li>
+				<li>Boolean</li>
+				<li>Set</li>
+				<li>Dictionary</li>
+			</ul>
+
+			<h2>Numeric Data Types</h2>
+			<p>Numeric data types in Python are used to represent numeric values. There are three types of numeric data types in Python:</p>
+			<ul>
+				<li>Integer (int): represents positive or negative whole numbers.</li>
+				<li>Float (float): represents real numbers with decimal points.</li>
+				<li>Complex (complex): represents complex numbers with a real and imaginary component.</li>
+			</ul>
+
+			<p>Examples:</p>
+			<pre>
+		x = 5 # integer
+		y = 2.7 # float
+		z = 2 + 3j # complex
+			</pre>
+
+			<h2>Sequence Data Types</h2>
+			<p>Sequence data types in Python are used to represent sequences of values. There are three types of sequence data types in Python:</p>
+			<ul>
+				<li>String (str): represents a sequence of characters.</li>
+				<li>List (list): represents a sequence of values, which can be of different data types.</li>
+				<li>Tuple (tuple): represents a sequence of values, which can be of different data types, but are immutable (cannot be changed).</li>
+			</ul>
+
+			<p>Examples:</p>
+			<pre>
+		name = "John" # string
+		numbers = [1, 2, 3] # list
+		values = (4, "hello", 2.7) # tuple
+			</pre>
+
+			<h2>Boolean Data Type</h2>
+			<p>The Boolean data type in Python is used to represent truth values, which can be either True or False.</p>
+
+			<p>Example:</p>
+			<pre>
+		x = True # boolean
+		y = False # boolean
+			</pre>
+
+			<h2>Set Data Type</h2>
+			<p>The Set data type in Python is used to represent a collection of unique values, which can be of different data types.</p>
+
+			<p>Example:</p>
+			<pre>
+		set1 = {1, 2, 3} # set
+		set2 = {"apple", "banana", "orange"} # set
+			</pre>
+
+			<h2>Dictionary Data Type</h2>
+			<p>The Dictionary data type in Python is used to represent a collection of key-value pairs, where each key is unique and associated with a value.</p>
+
+			<p>Example:</p>
+			<pre>
+		person = {"name": "John", "age": 30, "city": "New York"} # dictionary
+			</pre>
+	</div>
+</main>
+</body></html>

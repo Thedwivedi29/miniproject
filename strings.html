@@ -1,0 +1,316 @@
+<html><head>
+	<title>codify</title>
+	<style>
+		/* Style for the header */
+		header {
+			background-color: #f6f3f3;
+			color: rgb(8, 2, 2);
+			padding: 5px;
+			text-align: center;
+			position: relative;
+		}
+		h1 {
+			font-size: 48px;
+			margin: 0;
+		}
+		.logo {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+            padding: 1 px;
+		}
+		/* Style for the navigation bar */
+		nav {
+			background-color: #0b0000;
+			padding: 10px;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			
+		}
+		nav li {
+			margin: 0 5px;
+			padding: 3px;
+			position: relative;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 15px;
+		}
+		/* Dropdown styles */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #979595;
+			z-index: 1;
+			padding: 10px;
+		}
+		.dropdown-content a {
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		/* Style for the main content */
+		main {
+			display: flex;
+			flex-direction: row;
+			padding: 20px;
+			max-width: 2000px;
+			margin: 0 auto;
+		}
+		.left-content {
+			flex-basis: 20%;
+			background-color: #ddd;
+			padding: 20px;
+		}
+		.left-content h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+		.left-content ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.left-content li {
+			margin: 10px 10px;
+			padding: 0px 0px;
+		}
+		.left-content a {
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		.right-content {
+			flex-basis: 75%;
+			background-color: #fff;
+			padding: 20px;
+		}
+		h2 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0;
+			max-width: 800px;
+		}
+		button {
+			background-color: #131212;
+			color: white;
+			font-size: 20px;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 5px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.search-container {
+			display: flex;
+			align-items: left;
+			background-color: #f7f6f6;
+			padding: 5px 80px;
+		}
+		.search-container input[type="text"] {
+  			width: 800px;
+  			padding: 10px 10px;
+			margin: 8px 87px;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: white;
+			font-size: 16px;
+		}
+
+		.search-container button {
+			background-color: #333;
+			color: white;
+			font-size: 24px;
+		}
+		.my-button {
+			background-color: grey;
+			color: white;
+			font-size: 16px;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+	<a href = "python page.html" > <img src="logo.jpg" alt="Logo" class="logo" width="135" height="50"></a>
+	<div class="search-container">
+		<form action="/search">
+			<label for="search-input"> </label>
+			<input type="text" id="search-input" name="q" placeholder="Search...">
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</header>
+	
+<nav>
+	<ul>
+		<li><a href="array.html"><button>Arrays</button></a></li>
+		<li><a href="strings.html"><button>Strings</button></a></li>
+		<li><a href="functions.html"><button>Functions</button></a></li>
+		<li><a href="filehandling.html"><button>File Handling</button></a></li>
+		<li><a href="datastructure.html"><button>Data Structures</button></a></li>
+		<li><a href="programs.html"><button>Python Programs</button></a></li>
+		<li><a href="operators.html"><button>Operators in Python</button></a></li>
+	</ul>
+</nav>
+
+<main>
+	<div class="left-content">
+		<h2>Categories</h2>
+		<ul>
+			<li><a href="introduction.html">Introduction</a></li>
+            <li><a href="Datatypes.html">Data Types</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="array.html">Array</a></li>
+			<li><a href="strings.html">Strings</a></li>
+			<li><a href="userinput.html">User Input in Python</a></li>
+			<li><a href="tuples.html">Tuples</a></li>
+			<li><a href="sets.html">Sets</a></li>
+			<li><a href="dictionaries.html">Dictionaries</a></li>
+			<li><a href="ifelse.html">If-Else Statements in Python</a></li>
+			<li><a href="for.html">For Loops in Python</a></li>
+			<li><a href="while.html">While Loops in Python</a></li>
+		</ul>
+	</div>
+	<div class="right-content">
+        <h2>Strings and String Functions in Python</h2>
+        <h3>Strings in Python</h3>
+            <p>Strings are a sequence of characters in Python. They can be enclosed in single quotes ('...') or double quotes ("...").</p>
+            <p>Here's an example:</p>
+            <pre><code>
+            # Declare a string variable
+            my_string = "Hello, World!"
+            
+            # Print the string
+            print(my_string)
+            
+            # Accessing characters in a string
+            print(my_string[0])    # Output: 'H'
+            print(my_string[6])    # Output: 'W'
+            print(my_string[-1])   # Output: '!'
+            </code></pre>
+            <p>The output of the above code would be:</p>
+            <pre><code>
+            Hello, World!
+            H
+            W
+            !
+            </code></pre>
+            <p>Python provides a number of built-in functions for working with strings. Here are some of them:</p>
+            <ul>
+            <li><code>len()</code>: returns the length of a string</li>
+            <li><code>str.lower()</code>: returns a string in lowercase</li>
+            <li><code>str.upper()</code>: returns a string in uppercase</li>
+            <li><code>str.replace(old, new)</code>: replaces all occurrences of <code>old</code> with <code>new</code> in a string</li>
+            <li><code>str.strip()</code>: removes leading and trailing whitespace from a string</li>
+            <li><code>str.split()</code>: splits a string into a list of substrings based on a delimiter</li>
+            </ul>
+            <p>Here's an example:</p>
+            <pre><code>
+            # Declare a string variable
+            my_string = "Hello, World!"
+            
+            # Using built-in functions
+            print(len(my_string))                 # Output: 13
+            print(my_string.lower())              # Output: hello, world!
+            print(my_string.upper())              # Output: HELLO, WORLD!
+            print(my_string.replace("World", "Python"))    # Output: Hello, Python!
+            print(my_string.strip())              # Output: Hello, World!
+            
+            # Splitting a string
+            my_string = "Hello,Python,World!"
+            my_list = my_string.split(",")
+            print(my_list)                        # Output: ['Hello', 'Python', 'World!']
+            </code></pre>
+            <p>The output of the above code would be:</p>
+            <pre><code>
+            13
+            hello, world!
+            HELLO, WORLD!
+            Hello, Python!
+            Hello, World!
+            ['Hello', 'Python', 'World!']
+            </code></pre>
+        <h3>String Functions</h3>
+        
+        <h4>len()</h4>
+        <p>Returns the length of a string.</p>
+        <code>
+          str = "Hello, world!"
+          print(len(str))
+        </code>
+        <p>Output: 13</p>
+      
+        <h4>lower()</h4>
+        <p>Returns a copy of the string in lowercase.</p>
+        <code>
+          str = "Hello, world!"
+          print(str.lower())
+        </code>
+        <p>Output: hello, world!</p>
+      
+        <h4>upper()</h4>
+        <p>Returns a copy of the string in uppercase.</p>
+        <code>
+          str = "Hello, world!"
+          print(str.upper())
+        </code>
+        <p>Output: HELLO, WORLD!</p>
+      
+        <h4>strip()</h4>
+        <p>Returns a copy of the string with leading and trailing whitespace removed.</p>
+        <code>
+          str = "   Hello, world!   "
+          print(str.strip())
+        </code>
+        <p>Output: Hello, world!</p>
+      
+        <h4>replace()</h4>
+        <p>Returns a copy of the string with all occurrences of a substring replaced with another substring.</p>
+        <code>
+          str = "Hello, world!"
+          print(str.replace("Hello", "Hi"))
+        </code>
+        <p>Output: Hi, world!</p>
+      
+        <h4>split()</h4>
+        <p>Returns a list of substrings separated by a delimiter.</p>
+        <code>
+          str = "Hello, world!"
+          print(str.split(", "))
+        </code>
+        <p>Output: ['Hello', 'world!']</p>
+      
+        <h4>join()</h4>
+        <p>Joins a list of strings with a specified separator.</p>
+        <code>
+          mylist = ['apple', 'banana', 'cherry']
+          separator = " and "
+          print(separator.join(mylist))
+        </code>
+        <p>Output: apple and banana and cherry</p>
+      
+	</div>
+</main>
+</body></html>
